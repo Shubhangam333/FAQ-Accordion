@@ -65,7 +65,7 @@ function AccordionItem({ item }: { item: AccordionItem }) {
     <article>
       <p onClick={toggleItem} ref={animationParent} className="cursor-pointer">
         <div className="flex justify-between items-start">
-          <span className="font-bold text-xl text-black hover:text-[#AD28EB]">
+          <span className="font-bold md:text-xl text-lg text-black hover:text-[#AD28EB]">
             {item.question}
           </span>
           <div>
