@@ -68,13 +68,15 @@ function AccordionItem({ item }: { item: AccordionItem }) {
           <span className="font-bold text-xl text-black">{item.question}</span>
           <div>
             {!isItemOpen && (
+              <Image src={plusIconImage} alt="plus-icon" className="w-8 h-8 " />
+            )}
+            {isItemOpen && (
               <Image
-                src={plusIconImage}
-                alt="plus-icon"
-                className="w-8 h-8 object-cover"
+                src={minusIconImage}
+                alt="minus-icon"
+                className="w-8 h-8 "
               />
             )}
-            {isItemOpen && <Image src={minusIconImage} alt="minus-icon" />}
           </div>
         </div>
         {isItemOpen && <p>{item.answer}</p>}
