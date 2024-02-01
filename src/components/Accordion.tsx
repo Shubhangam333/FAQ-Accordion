@@ -65,7 +65,9 @@ function AccordionItem({ item }: { item: AccordionItem }) {
     <article>
       <Link href="#" onClick={toggleItem} ref={animationParent}>
         <div className="flex justify-between items-start">
-          <span className="font-bold text-xl text-black">{item.question}</span>
+          <span className="font-bold text-xl text-black hover:text-[#AD28EB]">
+            {item.question}
+          </span>
           <div>
             {!isItemOpen && (
               <Image src={plusIconImage} alt="plus-icon" className="w-8 h-8 " />
