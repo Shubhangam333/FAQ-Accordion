@@ -63,7 +63,7 @@ function AccordionItem({ item }: { item: AccordionItem }) {
   const [animationParent] = useAutoAnimate();
   return (
     <article>
-      <Link href="#" onClick={toggleItem} ref={animationParent}>
+      <p onClick={toggleItem} ref={animationParent}>
         <div className="flex justify-between items-start">
           <span className="font-bold text-xl text-black hover:text-[#AD28EB]">
             {item.question}
@@ -82,7 +82,7 @@ function AccordionItem({ item }: { item: AccordionItem }) {
           </div>
         </div>
         {isItemOpen && <p>{item.answer}</p>}
-      </Link>
+      </p>
     </article>
   );
 }
